@@ -3,8 +3,20 @@
   margin: 0;
   padding:0;
 }
-.body{
-  background-color: #D49A2B;
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+html,body{
+  background-color:white;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+.page-wrapper {
+  background-color:#f1ece2;
+  
+}
+
+.navbar-brand{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:#D49A2B;
 }
 .food-container{
       
@@ -42,16 +54,14 @@
 .food-container a{
     cursor: pointer;
 }
-.row{
-    height: 200px;
-    object-fit: cover;
-}
+.row{}
+
 .menu-card {
     margin-top: 40px;;
       border: none;
-      border-radius: 2px;
+      border-radius: 15px;
       overflow: hidden;
-      background-color:white;
+      background-color:#f1ece2;
       box-shadow: 0px 2px 1px ;
       transition: transform 0.2s ease-in-out;
     }
@@ -83,26 +93,62 @@
       font-size: 0.88rem;
       line-height: 1.4;
     }
-    .hero-container{
-     background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   color: white;
-   display: flex;
-   align-items: stretch; 
-   height: 300px; ;
-    }
+.hero-container{
+  padding-top: 30px;
+}
+.about-overlap {
+  position: relative;
+  width: 100%;
+}
 
-   .about-content{
-    height: 350px;
-    background-color: #D49A2B;
-    border-radius:20px 0 0 0;
-  
+.about-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.about-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 45%;
+  background-color: #f5e9d3;
+  border-radius: 50px 0 0 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  color: #1a1716;
+  font-weight: 600;
+}
+
+.divider-deco {
+  color: #dfa038;
+  margin: 10px 0 20px 0;
+  font-size: 1.2rem;
+}
+
+.about-content p {
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.about-content .btn-warning {
+  width: fit-content;
 }
 .custom-footer {
       background-color: #1a1716; 
       color:white;
       font-size: 0.88rem;
+      margin-top: 50px;
+      
     }
 
     .footer-title,
